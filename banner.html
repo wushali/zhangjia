@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			
+			*{margin:0;padding:0;}
+			li{list-style: none;}
+			.margins{width:1200px;margin:0 auto;}
+			#subcolumn-t{height:110px;background: white;}
+			#subcolumn{height:105px;padding-top: 5px;background: white;}
+		#subcolumn_t{height:20px;margin-bottom: 20px;}	
+			#subcolumn_t_left{float:left;height:20px;}
+			#subcolumn_t_left li{padding:0 10px;float: left;height:20px;width:60px;
+			font:12px/20px "";border-left: 1px solid gray;color:darkgray;}
+			#subcolumn_t_left li:hover{color:orangered;cursor: pointer;}
+			#subcolumn_t_left_last div{height: 200px;width:120px;position: absolute;left:460px;
+			box-shadow: -2px -2px  5px gray;z-index: 2;display: none;background: white;}
+			#subcolumn_t_right{float: right;}
+			#subcolumn_t_right li{padding:0 10px;float: left;height:20px;width:50px;
+			font:12px/20px "";border-left: 1px solid gray;color:darkgray;}
+			#subcolumn_t_right li:hover{color:orangered;cursor: pointer;}
+		#subcolumn_b{height:55px;}
+			#subcolumn_b_left{float: left;margin-right: 60px;}
+			#subcolumn_b_center{height:36px;float: left;}
+			#subcolumn_b_center li{padding:0 10px;float: left;font:16px/36px "";}
+			#subcolumn_b_center li:hover{color:red;border-bottom: 2px solid red;}
+			#subcolumn_b_right{width:260px;height:40px;float: right;}
+			#main{}
+			#kong{height:30px;}
+			#Img{width:450px;height:450px;float: left;}
+			#Img img{width:400px;height:400px;margin :25px;}
+			.main-right{float: left;width:750px;height:450px;}
+			h2{font:30px/42px "";}
+			h3{font:14px/36px "";}
+			.price{color: red;border-bottom: 1px solid gray;padding-bottom: 20px;}
+			#choose{width:600px;height:50px;padding-top: 20px;}
+			#choose li{float: left;font:26px/50px "";margin:0 15px;border:1px solid black;padding:0 10px;}
+			#choose li:hover{color:orangered;border-color: red;}
+			#gouwuche{width:200px;height:50px;background: red;font:36px/50px "";text-align: center;margin:30px 44%;}
+			#gouwuche:hover{cursor: pointer;}
+			#chos:hover{cursor: pointer;}
+		</style>
+	</head>
+	<body>
+		<div id="subcolumn-t" class="margin">
+		<div id="subcolumn" class="margins">	
+			<div id="subcolumn_t">
+				<ul id="subcolumn_t_left">
+					<li>华为官网</li>
+					<li>华为民网</li>
+					<li>华为上网</li>
+					<li>华为私网</li>
+					<li>华为宽带</li>
+					<li id="subcolumn_t_left_last">更多内容 <div id="last_li"></div></li>
+				</ul>
+				<ul id="subcolumn_t_right">
+					<li><a href="load/load.html">请登录</a></li>
+					<li><a href="login/login.html">注册</a></li>
+					<li>我的订单</li>
+					<li>购物车</li>
+				</ul>
+				</div>
+		<div id="subcolumn_b">
+			<img src="img/subcolumn_1.png" id="subcolumn_b_left" class="blockhover"/>
+			<ul id="subcolumn_b_center">
+				<li class="blockhover">华为专区</li>
+				<li class="blockhover">华为专线</li>
+				<li class="blockhover">华为转区</li>
+				<li class="blockhover">华为换线</li>
+				<li class="blockhover">华为掉线</li>
+				<li class="blockhover">华为818</li>
+			</ul>
+			<form action="" id="subcolumn_b_right">
+				<input type="text" id="subcolumn_b_right_txt"/>
+				<input type="submit"  id="subcolumn_b_right_btn"/>
+			</form>
+			</div>
+			</div>
+		</div>
+		<div id="main" class="margins">
+			<div id="kong"></div>
+		<div id="Img">
+			<img src="img/img0.jpg" id="chos"/>
+		</div>
+		
+		
+		
+		<div class="main-right">
+			<h2>荣耀9 全网通标配版 4GB+64GB（魅海蓝）</h2>
+			<h3>【现货速发】2000万变焦双摄/拍照就像用单反</h3>
+			<p class="price">¥ 2299.00</p>
+			<span>选择颜色</span>
+			<ul id="choose">
+				
+				<li>蓝色</li>
+				<li>灰色</li>
+				<li>金色</li>
+				<li>黑色</li>
+			</ul>
+			<div id="gouwuche">加入购物车</div>
+		</div>
+		
+		</div>
+		
+		
+		
+		<script type="text/javascript">
+			$(function(){
+				
+				
+				$("#choose").children().click(function(){
+					$(this).css({"color":"orangered"},{"border":"red"}).siblings().css({"color":"black"},{"border":"black"});
+					var This=$(this);
+					var index=$(this).index();
+					$("#chos").attr({"src":"img/img"+index+".jpg"})
+					
+					
+					
+					
+					
+					
+				});
+				
+				
+				
+				
+				
+				$(".main-right").children().mouseover(function(){
+					$(this).css({"cursor":"pointer"});
+				})
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			})
+			
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

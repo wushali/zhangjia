@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="startMove.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="remain.css"/>
+		
+	</head>
+	<body>
+		<div id="header" class="margin blockhover">
+		<a href=""><img src="img/header_1.jpg" class="margin"/></a>	
+		<button id="header_btn" title="关闭" >X</button>	
+		</div>
+		
+		
+		<div id="subcolumn-t" class="margin">
+			<div id="subcolumn" class="margins">	
+			<div id="subcolumn_t">
+				<ul id="subcolumn_t_left">
+					<li>华为官网</li>
+					<li>华为民网</li>
+					<li>华为上网</li>
+					<li>华为私网</li>
+					<li>华为宽带</li>
+					<li id="subcolumn_t_left_last">更多内容 <div id="last_li"></div></li>
+				</ul>
+				<ul id="subcolumn_t_right">
+					<li><a href="load/load.html">请登录</a></li>
+					<li><a href="login/login.html">注册</a></li>
+					<li>我的订单</li>
+					<li>购物车</li>
+				</ul>
+				</div>
+		<div id="subcolumn_b">
+			<img src="img/subcolumn_1.png" id="subcolumn_b_left" class="blockhover"/>
+			<ul id="subcolumn_b_center">
+				<li class="blockhover">华为专区</li>
+				<li class="blockhover">华为专线</li>
+				<li class="blockhover">华为转区</li>
+				<li class="blockhover">华为换线</li>
+				<li class="blockhover">华为掉线</li>
+				<li class="blockhover">华为818</li>
+			</ul>
+			<form action="" id="subcolumn_b_right">
+				<input type="text" id="subcolumn_b_right_txt"/>
+				<input type="submit"  id="subcolumn_b_right_btn"/>
+			</form>
+			</div>
+			</div>
+		</div>
+		
+		
+		<div id="banner-copy"></div>
+		
+		<div id="banner" class="margin blockhover">
+			
+			
+			
+			
+				<div id="partNav">
+			<ul>
+				<script id="nav" type="text/html">
+					{{each navList as value}}
+					<li>
+						{{each value as item i}}
+						<a href="{{item.link}}">{{item.title}}</a>
+						{{if i != value.length-1}}
+						<span class="dl">/</span>
+						{{/if}}
+						
+						{{/each}}
+					</li>	
+					{{/each}}
+				</script>
+				</ul>
+				
+			
+			<div class="navCon">
+				<script id="navCon" type="text/html">
+					<div class="navList clearfix">
+					<div class="part1">
+						<div class="channel clearfix">
+							{{each recm as value}}
+							<a href="{{value.link}}" target="_blank">{{value.tit}}<span>&gt;</span></a>
+							{{/each}}
+						</div>
+						<div class="detail">
+							{{each subNavLists as value1}}
+							<dl class="detail_item clearfix">
+								<dt><a href="" target="_blank">{{value1.subNavTit}}<span>&gt;</span></a></dt>
+								<dd>
+									{{each value1.subNavList as value11}}
+										<a href="" target="_blank">{{value11}}</a>
+									{{/each}}
+								</dd>
+							</dl>
+							{{/each}}
+				</script>
+				
+
+			</div>
+		</div>
+		</div>
+		</div>
+		</div>
+			
+			<script src="template.js" type="text/javascript" charset="utf-8"></script>
+			<script src="nav.js" type="text/javascript" charset="utf-8"></script>
+			
+			<ul id="banner_list" >
+				<li><img src="img/banner_1.jpg"/></li>
+				<li><img src="img/banner_2.jpg"/></li>
+				<li><img src="img/banner_3.jpg"/></li>
+			</ul>
+			
+			<ul id="banner_nav">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		
+		<div id="nav" class="margins">
+			<div id="nav_left">
+				<div id="nav_left_left">
+					<img src="img/nav1.png" id="nav_left_left_img"/>
+					<p id="nav_left_left_p">欢迎来到华为商城，请 <a class="blockhovercolor" id="load" href="load/load.html">登录</a>
+还没账号？ <a class="blockhovercolor" id="login" href="login/login.html">注册 </a>即可享受    ></p>
+					
+				</div>
+				<ul id="nav_left_right">
+					<li><img src="img/nav2.png"/><p>优选配件</p></li>
+					<li><img src="img/nav2.png"/><p>优选配件</p></li>
+					<li><img src="img/nav2.png"/><p>优选配件</p></li>
+					<li><img src="img/nav2.png"/><p>优选配件</p></li>
+					<li><img src="img/nav2.png"/><p>优选配件</p></li>
+					<li><img src="img/nav2.png"/><p>优选配件</p></li>
+				</ul>
+				
+			</div>
+			
+			<div id="nav_right">
+				<div id="nav_right_top">
+					<div id="nav_right_top_left">
+						<img src="img/nav3.png" id="nav_right_top_left_img"/>
+					</div>
+					
+					<div id="nav_right_top_right">
+						<ul id="nav_right_top_right_lunbo">
+							<li><a href="">11111111</a></li>
+							<li><a href="">22222222</a></li>
+							<li><a href="">33333333</a></li>
+							<li><a href="">44444444</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div id="nav_right_bottom">
+					<a href="" id="nav_right_bottom_a" class="blockhovercolor"><img src="img/nav4.png"/>实名认证</a>
+					<a href="" id="nav_right_bottom_a" class="blockhovercolor"><img src="img/nav4.png"/>实名举报</a>
+					<a href="" id="nav_right_bottom_a" class="blockhovercolor"><img src="img/nav4.png"/>实名挂机</a>
+				</div>
+			</div>
+		</div>
+		
+		<ul id="menu" class="margins">
+			<li id="menu_li" class="blockhover"><a href="banner.html"><img src="img/menu1.jpg"/></a></li>
+			<li id="menu_li" class="blockhover"><a href="banner.html"><img src="img/menu1.jpg"/></a></li>
+			<li id="menu_li" class="blockhover"><a href="banner.html"><img src="img/menu1.jpg"/></a></li>
+			<li id="menu_li_4" class="blockhover"><a href="banner.html"><img src="img/menu1.jpg"/></a></li>
+		</ul>
+			
+		<h2 id="title1" class="margins">热销单品</h2>
+		
+		<div id="subnav" class="margins">
+			<a href="" id="subnav_left">
+				<img src="img/subnav1.jpg"/>
+			</a>
+			<ul id="subnav_right">
+				<li><a href="banner.html" id="subnav_right_a"><img src="img/subnav2.jpg"/><h3>荣耀华为9</h3><p>最高可优惠700</p><p>￥2599</p></a></li>
+				<li><a href="banner.html" id="subnav_right_a"><img src="img/subnav2.jpg"/><h3>荣耀华为9</h3><p>最高可优惠700</p><p>￥2599</p></a></li>
+				<li><a href="banner.html" id="subnav_right_a"><img src="img/subnav2.jpg"/><h3>荣耀华为9</h3><p>最高可优惠700</p><p>￥2599</p></a></li>
+				<li><a href="banner.html" id="subnav_right_a"><img src="img/subnav2.jpg"/><h3>荣耀华为9</h3><p>最高可优惠700</p><p>￥2599</p></a></li>
+				<li><a href="banner.html" id="subnav_right_a"><img src="img/subnav2.jpg"/><h3>荣耀华为9</h3><p>最高可优惠700</p><p>￥2599</p></a></li>
+				<li><a href="banner.html" id="subnav_right_a"><img src="img/subnav2.jpg"/><h3>荣耀华为9</h3><p>最高可优惠700</p><p>￥2599</p></a></li>
+				<li><a href="banner.html" id="subnav_right_a"><img src="img/subnav2.jpg"/><h3>荣耀华为9</h3><p>最高可优惠700</p><p>￥2599</p></a></li>
+				<li><a href="banner.html" id="subnav_right_a"><img src="img/subnav2.jpg"/><h3>荣耀华为9</h3><p>最高可优惠700</p><p>￥2599</p></a></li>
+			</ul>
+		</div>
+		
+		<h2 id="title1" class="margins">精品热卖</h2>
+		
+		<div id="jingpin" class="margins">
+			<ul id="jingpin_lunbo">
+				<li><a href="banner.html" id="jingpin_lunbo_a"><img src="img/jingpin.jpg" /><h3>华为手表</h3><p>降价600</p><p>￥4699</p></a></li>
+				<li><a href="banner.html" id="jingpin_lunbo_a"><img src="img/jingpin2.jpg" /><h3>华为手表</h3><p>降价600</p><p>￥4699</p></a></li>
+				<li><a href="banner.html" id="jingpin_lunbo_a"><img src="img/jingpin3.jpg" /><h3>华为手表</h3><p>降价600</p><p>￥4699</p></a></li>
+				<li><a href="banner.html" id="jingpin_lunbo_a"><img src="img/jingpin.jpg" /><h3>华为手表</h3><p>降价600</p><p>￥4699</p></a></li>
+				<li><a href="banner.html" id="jingpin_lunbo_a"><img src="img/jingpin2.jpg" /><h3>华为手表</h3><p>降价600</p><p>￥4699</p></a></li>
+				<li><a href="banner.html" id="jingpin_lunbo_a"><img src="img/jingpin3.jpg" /><h3>华为手表</h3><p>降价600</p><p>￥4699</p></a></li>
+				<li><a href="banner.html" id="jingpin_lunbo_a"><img src="img/jingpin.jpg" /><h3>华为手表</h3><p>降价600</p><p>￥4699</p></a></li>
+				<li><a href="banner.html" id="jingpin_lunbo_a"><img src="img/jingpin2.jpg" /><h3>华为手表</h3><p>降价600</p><p>￥4699</p></a></li>
+			</ul>
+		 <div id="jingpin_btns">
+		 	<div id="jingpin_btns_btn1">&nbsp;&lt;</div>
+		 	<div id="jingpin_btns_btn2">&gt;</div>
+		 </div>
+		</div>
+			
+		
+		<img src="img/subbanner.jpg" id="subbanner" class="margins"/>
+		
+		
+		<div id="title2" class="margins">
+			<h2 id="title2_left">手机</h2>
+			<ul id="title2_ul">
+				<li><a href="" id="title2_ul_li_a">华为</a></li>
+				<li><a href="" id="title2_ul_li_a">华为合约机</a></li>
+				<li><a href="" id="title2_ul_li_a">华为战斗机</a></li>
+				<li><a href="" id="title2_ul_li_a">HUAWEI MATE</a></li>
+				<li><a href="" id="title2_ul_li_a">华为</a></li>
+				<li><a href="" id="title2_ul_li_a">华为电信</a></li>
+				<li><a href="" id="title2_ul_li_a">华为宽带</a></li>
+			</ul>
+			<div id="title2_right">
+				<a href="" id="title2_right_a"> 更多> </a>
+			</div>
+		</div>
+		
+		<div id="main-shouji" class="margins">
+			<ul id="main-bijibendiannao_ul">
+				<li><a href=""><img src="img/main-shouji1.jpg"/></a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			
+			</ul>
+		</div>
+			
+			
+		<div id="asd"></div>
+		
+		
+		
+		<div id="title2" class="margins">
+			<h2 id="title2_left">笔记本电脑</h2>
+			<ul id="title2_ul">
+				<li><a href="" id="title2_ul_li_a">平板电脑</a></li>
+				<li><a href="" id="title2_ul_li_a">笔记本电脑</a></li>
+				<li><a href="" id="title2_ul_li_a">笔记本配件</a></li>
+				
+			</ul>
+			<div id="title2_right">
+				<a href="" id="title2_right_a"> 更多> </a>
+			</div>
+		</div>
+		
+		
+		<div id="main-bijibendiannao" class="margins">
+			<ul id="main-bijibendiannao_ul">
+				<li><a href=""><img src="img/bijibendiannao2.jpg"/></a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			
+			</ul>
+		</div>
+		
+		
+		<div id="title2" class="margins">
+			<h2 id="title2_left">精品平板</h2>
+			<ul id="title2_ul">
+				<li><a href="" id="title2_ul_li_a">平板电脑</a></li>
+				<li><a href="" id="title2_ul_li_a">笔记本电脑</a></li>
+				<li><a href="" id="title2_ul_li_a">笔记本配件</a></li>
+				
+			</ul>
+			<div id="title2_right">
+				<a href="" id="title2_right_a"> 更多> </a>
+			</div>
+		</div>
+		
+		<div id="main-jingpindiannao" class="margins">
+			<ul id="main-bijibendiannao_ul">
+				<li><a href=""><img src="img/jingpindiannao1.jpg"/></a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		
+		<div id="title2" class="margins">
+			<h2 id="title2_left">智能穿戴</h2>
+			<ul id="title2_ul">
+				<li><a href="" id="title2_ul_li_a">手环</a></li>
+				<li><a href="" id="title2_ul_li_a">手表</a></li>
+				
+				
+			</ul>
+			<div id="title2_right">
+				<a href="" id="title2_right_a"> 更多> </a>
+			</div>
+		</div>
+		
+		<div id="main-zhinengchuandai" class="margins">
+			<ul id="main-bijibendiannao_ul">
+				<li><a href=""><img src="img/zhinengchuandai1.jpg"/></a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		
+		<div id="title2" class="margins">
+			<h2 id="title2_left">智能家居</h2>
+			<ul id="title2_ul">
+				<li><a href="" id="title2_ul_li_a">字母路由</a></li>
+				<li><a href="" id="title2_ul_li_a">电视盒子</a></li>
+				<li><a href="" id="title2_ul_li_a">路由器</a></li>
+				
+			</ul>
+			<div id="title2_right">
+				<a href="" id="title2_right_a"> 更多> </a>
+			</div>
+		</div>
+		
+		<div id="main-zhinengjiaju" class="margins">
+			<ul id="main-bijibendiannao_ul">
+				<li><a href=""><img src="img/zhinengjiaju1.jpg" /></a></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				
+			</ul>
+		</div>
+		
+		<div id="foot-lunbo">	
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div id="xixi" style="height:200px;"></div>
+		
+		
+		<script src="remain.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+
+
+
+
+
+

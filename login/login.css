@@ -1,0 +1,26 @@
+	body{background:#F1F1F1;}
+	.hover:hover{cursor: pointer;}
+	.margin{width:988px;margin:0 auto;}
+	.type_email,.type_phone{width:150px;height:34px;background:darkgray;color:white;text-align: center;margin-left: 5px;}
+	#main{background: white;height:920px;padding:50px 97px;width:794px;}
+	.main_phone{height:920px;}
+		.main_phone h2{height:28px;font-size: 28px;}
+		.main_phone p{height:16px;font-size: 12px;margin-top: 16px;color: #D1D1D1;}
+		.main_phone span{font-weight: 600;font-size: 14px;}
+		.main_phone .kong{height:39px;border-bottom:1px solid darkgray;margin-bottom: 30px;}
+		.main_phone .country{display: flex;justify-content:space-between;}
+		.main_phone label{display: block;height:32px;font:14px/32px "";color: gray;margin-top:20px;}
+		.main_phone label input{height:30px;font:14px/30px "";}
+		.main_phone .phone_phone #phone_btn{width:176px;border: 0;margin-left: 40px;}
+	#checkbtn{width:274px;height:44px;background:#E73C01;margin:10px 39%;}
+	
+.type_phone{background:red;}
+#eml{display: none;}
+
+
+
+
+
+
+
+
